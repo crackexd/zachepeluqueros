@@ -51,7 +51,7 @@ La web ya incluye `sitemap.xml`, `robots.txt`, canonical, metadatos sociales y d
 - Confirmar el horario publicado (actualmente lunes a viernes 10:00–19:00 y sábado 10:00–14:00).
 - Confirmar que los cuatro grupos de servicios reflejan exactamente lo que ofrece el salón.
 - Añadir fotos reales y, si se desea, la información legal del titular del negocio.
-- Sustituir en `legal/` los campos marcados como pendientes por nombre o razón social, NIF/CIF y correo electrónico.
+- Los datos identificativos del titular están incorporados en las tres páginas de `legal/`.
 
 ## Blog
 
