@@ -1021,10 +1021,15 @@ svg {
   flex-direction: column;
   justify-content: space-between;
   padding: clamp(28px, 5vw, 60px);
+  padding-bottom: 118px;
   color: var(--cream);
   background:
     radial-gradient(circle at 86% 16%, rgba(217,155,118,.26), transparent 32%),
     linear-gradient(145deg, #33342f, #171714);
+}
+
+.map-consent .button {
+  align-self: flex-start;
 }
 
 .map-wordmark {
