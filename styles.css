@@ -660,12 +660,18 @@ svg {
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 22px;
   margin-top: 70px;
 }
 
+.team-card {
+  min-width: 0;
+}
+
 .team-photo {
+  width: 100%;
+  min-height: 0;
   aspect-ratio: 4 / 5;
   color: var(--cream);
 }
@@ -1775,7 +1781,7 @@ svg {
   }
 
   .team-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 48px;
   }
 
