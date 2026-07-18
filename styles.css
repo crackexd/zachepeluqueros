@@ -1416,6 +1416,24 @@ svg {
   line-height: .95;
 }
 
+.article-deck {
+  max-width: 720px;
+  margin: -8px 0 30px;
+  color: rgba(243,239,229,.7);
+  font-family: var(--serif);
+  font-size: clamp(21px, 2.4vw, 32px);
+  font-style: italic;
+  line-height: 1.35;
+}
+
+.article-page-sage .article-hero {
+  background: #26342f;
+}
+
+.article-page-copper .article-hero {
+  background: #603a2d;
+}
+
 .article-meta {
   display: flex;
   gap: 22px;
@@ -1464,6 +1482,16 @@ svg {
   font-size: clamp(38px, 5vw, 60px);
 }
 
+.article-content h3 {
+  margin: 38px 0 10px;
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
 .article-content li + li {
   margin-top: 12px;
 }
@@ -1477,6 +1505,47 @@ svg {
 
 .article-callout p {
   margin: 0;
+}
+
+.article-signoff {
+  margin-top: 64px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(23,23,20,.18);
+  font-size: 23px;
+  font-style: italic;
+}
+
+.article-sources {
+  margin-top: 90px;
+  padding: clamp(26px, 4vw, 44px);
+  border: 1px solid rgba(23,23,20,.16);
+  font-family: var(--sans);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.article-sources h2 {
+  margin: 0 0 14px;
+  font-size: clamp(28px, 3vw, 38px);
+}
+
+.article-sources p {
+  color: #777267;
+}
+
+.article-sources ol {
+  margin: 24px 0 0;
+  padding-left: 20px;
+}
+
+.article-sources a {
+  text-decoration: underline;
+  text-decoration-color: rgba(23,23,20,.3);
+  text-underline-offset: 4px;
+}
+
+.article-sources a:hover {
+  color: var(--copper);
 }
 
 .legal-wrap {
