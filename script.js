@@ -2,6 +2,7 @@ const header = document.querySelector('[data-header]');
 const menuButton = document.querySelector('[data-menu-button]');
 const menu = document.querySelector('[data-menu]');
 const year = document.querySelector('[data-year]');
+const loadMapButton = document.querySelector('[data-load-map]');
 
 const closeMenu = () => {
   menuButton?.setAttribute('aria-expanded', 'false');
@@ -28,11 +29,33 @@ window.addEventListener('keydown', (event) => {
   if (event.key === 'Escape') closeMenu();
 });
 
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 1040) closeMenu();
+});
+
 const syncHeader = () => header?.classList.toggle('is-scrolled', window.scrollY > 24);
 syncHeader();
 window.addEventListener('scroll', syncHeader, { passive: true });
 
 if (year) year.textContent = new Date().getFullYear();
+
+loadMapButton?.addEventListener('click', () => {
+  const mapCard = loadMapButton.closest('.map-card');
+  const consent = loadMapButton.closest('[data-map-consent]');
+
+  if (!mapCard || !consent) return;
+
+  const frame = document.createElement('iframe');
+  frame.className = 'map-frame';
+  frame.title = 'Mapa de Zache Peluqueros en Google Maps';
+  frame.loading = 'lazy';
+  frame.referrerPolicy = 'no-referrer-when-downgrade';
+  frame.allowFullscreen = true;
+  frame.src = 'https://www.google.com/maps?q=Zache+Peluqueros,+Calle+de+Javier+de+Miguel+7,+Madrid&output=embed';
+
+  consent.replaceWith(frame);
+  mapCard.classList.add('is-loaded');
+});
 
 const revealItems = document.querySelectorAll('[data-reveal]');
 

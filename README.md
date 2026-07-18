@@ -9,6 +9,7 @@ La página marca cada hueco con un comentario `<!-- FOTO: ... -->` en `index.htm
 - Foto principal: vertical, proporción 4:5, mínimo 1200 × 1500 px.
 - Foto de equipo/salón: vertical, proporción 4:5, mínimo 1000 × 1250 px.
 - Galería: una foto vertical 4:5 y dos fotos 4:3, mínimo 1000 px de ancho.
+- Equipo: tres retratos verticales 4:5, mínimo 1000 × 1250 px, además de nombre y especialidad.
 - Exportar preferentemente como `.webp`, calidad 80–85.
 - Añadir un texto `alt` breve que describa cada foto real.
 
@@ -50,3 +51,8 @@ La web ya incluye `sitemap.xml`, `robots.txt`, canonical, metadatos sociales y d
 - Confirmar el horario publicado (actualmente lunes a viernes 10:00–19:00 y sábado 10:00–14:00).
 - Confirmar que los cuatro grupos de servicios reflejan exactamente lo que ofrece el salón.
 - Añadir fotos reales y, si se desea, la información legal del titular del negocio.
+- Sustituir en `legal/` los campos marcados como pendientes por nombre o razón social, NIF/CIF y correo electrónico.
+
+## Blog
+
+El índice está en `blog/index.html` y el primer artículo completo sirve de plantilla en `blog/cuidar-el-cabello.html`. Para publicar otro artículo, duplica esa plantilla, cambia el contenido y añade una tarjeta en el índice y una URL en `sitemap.xml`.
