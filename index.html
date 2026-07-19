@@ -28,7 +28,7 @@
     <meta name="twitter:card" content="summary_large_image" />
 
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css?v=20260718-4" />
+    <link rel="stylesheet" href="styles.css?v=20260719-1" />
     <title>Zache Peluqueros | Peluquería en Puente de Vallecas, Madrid</title>
 
     <script type="application/ld+json">
@@ -123,12 +123,15 @@
           </div>
 
           <div class="hero-visual" data-reveal>
-            <!-- FOTO: sustituye este bloque por <img src="assets/foto-principal.webp" alt="Interior de Zache Peluqueros"> -->
-            <div class="photo-placeholder photo-placeholder-hero" role="img" aria-label="Espacio reservado para la foto principal del salón">
-              <span class="placeholder-kicker">Próximamente</span>
-              <span class="placeholder-letter" aria-hidden="true">Z</span>
-              <span class="placeholder-copy">Tu foto principal<br />del salón</span>
-            </div>
+            <img
+              class="site-photo hero-photo"
+              src="fotos%20pelu/especialista%20en%20bodas.jpeg"
+              width="1061"
+              height="1067"
+              alt="Estilista de Zache preparando el peinado de una novia"
+              fetchpriority="high"
+              decoding="async"
+            />
             <div class="hero-badge" aria-hidden="true">
               <svg viewBox="0 0 100 100"><defs><path id="circle" d="M50,50 m-34,0 a34,34 0 1,1 68,0 a34,34 0 1,1 -68,0"/></defs><text><textPath href="#circle">ZACHE · VALLECAS · MADRID · </textPath></text></svg>
               <span>✦</span>
@@ -148,12 +151,15 @@
       <section class="story section" id="nosotros" aria-labelledby="story-title">
         <div class="container story-grid">
           <div class="story-visual" data-reveal>
-            <!-- FOTO: sustituye por una imagen vertical del equipo o del trabajo en el salón -->
-            <div class="photo-placeholder photo-placeholder-portrait" role="img" aria-label="Espacio reservado para una foto vertical del equipo">
-              <span class="placeholder-index">01</span>
-              <span class="placeholder-letter" aria-hidden="true">Z</span>
-              <span class="placeholder-copy">Foto del equipo<br />o del salón</span>
-            </div>
+            <img
+              class="site-photo story-photo"
+              src="fotos%20pelu/local%20por%20fuera%20puerta%20de%20noche.jpeg"
+              width="970"
+              height="2048"
+              alt="Fachada iluminada de Zache Peluqueros en la calle Javier de Miguel"
+              loading="lazy"
+              decoding="async"
+            />
             <p class="photo-caption">Calle de Javier de Miguel, 7 · Vallecas</p>
           </div>
 
@@ -190,26 +196,14 @@
             <p>Profesionales que escuchan, aconsejan y trabajan para que tu estilo se sienta realmente tuyo.</p>
           </div>
 
-          <div class="team-grid">
-            <!-- EQUIPO: sustituir los tres bloques por fotos reales y completar nombres/especialidades -->
-            <article class="team-card" data-reveal>
-              <div class="photo-placeholder team-photo placeholder-warm" role="img" aria-label="Espacio reservado para la foto de una integrante del equipo">
-                <span class="placeholder-index">01</span><span class="placeholder-letter" aria-hidden="true">Z</span><span class="placeholder-copy">Foto del equipo</span>
-              </div>
-              <div class="team-meta"><h3>Nombre</h3><p>Especialidad</p></div>
-            </article>
-            <article class="team-card" data-reveal>
-              <div class="photo-placeholder team-photo placeholder-sage" role="img" aria-label="Espacio reservado para la foto de una integrante del equipo">
-                <span class="placeholder-index">02</span><span class="placeholder-letter" aria-hidden="true">Z</span><span class="placeholder-copy">Foto del equipo</span>
-              </div>
-              <div class="team-meta"><h3>Nombre</h3><p>Especialidad</p></div>
-            </article>
-            <article class="team-card" data-reveal>
-              <div class="photo-placeholder team-photo placeholder-dark" role="img" aria-label="Espacio reservado para la foto de una integrante del equipo">
-                <span class="placeholder-index">03</span><span class="placeholder-letter" aria-hidden="true">Z</span><span class="placeholder-copy">Foto del equipo</span>
-              </div>
-              <div class="team-meta"><h3>Nombre</h3><p>Especialidad</p></div>
-            </article>
+          <div class="team-preview" data-reveal>
+            <p class="team-preview-index" aria-hidden="true">Z</p>
+            <div>
+              <p class="eyebrow"><span></span> Muy pronto</p>
+              <h3>Pondremos cara a las manos que cuidan de ti.</h3>
+              <p>Estamos preparando las fotos y presentaciones del equipo. Mientras tanto, puedes venir a conocernos al salón.</p>
+            </div>
+            <a class="button button-primary" href="tel:+34914772737">Pide tu cita</a>
           </div>
         </div>
       </section>
@@ -247,6 +241,12 @@
             </article>
             <article class="service-item">
               <span class="service-number">04</span>
+              <h3>Manicura & maquillaje</h3>
+              <p>Detalles de belleza para completar tu estilo, desde las uñas hasta el maquillaje.</p>
+              <span class="service-icon" aria-hidden="true">↗</span>
+            </article>
+            <article class="service-item">
+              <span class="service-number">05</span>
               <h3>Cuidado capilar</h3>
               <p>Atención y recomendaciones adaptadas a las necesidades de tu cabello.</p>
               <span class="service-icon" aria-hidden="true">↗</span>
@@ -271,31 +271,42 @@
           </div>
 
           <div class="gallery-grid">
-            <div class="gallery-card gallery-card-tall" data-reveal>
-              <div class="photo-placeholder placeholder-warm" role="img" aria-label="Espacio reservado para una foto de un corte">
-                <span class="placeholder-index">01</span><span class="placeholder-letter" aria-hidden="true">Z</span><span class="placeholder-copy">Foto de corte</span>
-              </div>
-            </div>
-            <div class="gallery-card" data-reveal>
-              <div class="photo-placeholder placeholder-dark" role="img" aria-label="Espacio reservado para una foto de color">
-                <span class="placeholder-index">02</span><span class="placeholder-letter" aria-hidden="true">Z</span><span class="placeholder-copy">Foto de color</span>
-              </div>
-            </div>
-            <div class="gallery-card" data-reveal>
-              <div class="photo-placeholder placeholder-sage" role="img" aria-label="Espacio reservado para una foto de peinado">
-                <span class="placeholder-index">03</span><span class="placeholder-letter" aria-hidden="true">Z</span><span class="placeholder-copy">Foto de peinado</span>
-              </div>
-            </div>
-            <div class="gallery-card gallery-card-wide" data-reveal>
-              <div class="photo-placeholder placeholder-copper" role="img" aria-label="Espacio reservado para una foto del salón">
-                <span class="placeholder-index">04</span><span class="placeholder-letter" aria-hidden="true">Z</span><span class="placeholder-copy">Foto del salón</span>
-              </div>
-            </div>
-            <div class="gallery-card" data-reveal>
-              <div class="photo-placeholder placeholder-cream" role="img" aria-label="Espacio reservado para una foto de detalle">
-                <span class="placeholder-index">05</span><span class="placeholder-letter" aria-hidden="true">Z</span><span class="placeholder-copy">Foto de detalle</span>
-              </div>
-            </div>
+            <figure class="gallery-card gallery-card-featured" data-reveal>
+              <img class="site-photo" src="fotos%20pelu/ondas%20suaves%20con%20acabado%20brillante%20en%20tono%20rubio.jpeg" width="1200" height="1600" alt="Melena rubia con ondas suaves y acabado brillante" loading="lazy" decoding="async" />
+              <figcaption><span>Color & acabado</span><strong>Rubio con luz</strong></figcaption>
+            </figure>
+            <figure class="gallery-card gallery-card-landscape" data-reveal>
+              <img class="site-photo" src="fotos%20pelu/colores%20con%20personalidad%201.jpeg" width="1200" height="1600" alt="Melena larga en tono cobrizo intenso" loading="lazy" decoding="async" />
+              <figcaption><span>Color</span><strong>Cobrizo con personalidad</strong></figcaption>
+            </figure>
+            <figure class="gallery-card gallery-card-landscape" data-reveal>
+              <img class="site-photo" src="fotos%20pelu/rizos%20con%20mechas%20con%20mucho%20brillo.jpeg" width="1200" height="1600" alt="Cabello corto rizado con mechas luminosas" loading="lazy" decoding="async" />
+              <figcaption><span>Rizos & mechas</span><strong>Brillo y movimiento</strong></figcaption>
+            </figure>
+            <figure class="gallery-card gallery-card-portrait" data-reveal>
+              <img class="site-photo" src="fotos%20pelu/recogido%20bajo%20y%20elegante%20decorado%20con%20perlas.jpeg" width="1200" height="1600" alt="Recogido bajo elegante decorado con flores y perlas" loading="lazy" decoding="async" />
+              <figcaption><span>Eventos</span><strong>Recogido con perlas</strong></figcaption>
+            </figure>
+            <figure class="gallery-card gallery-card-portrait" data-reveal>
+              <img class="site-photo" src="fotos%20pelu/peina%20semirecogido%20con%20trenzado.jpeg" width="1200" height="1600" alt="Semirrecogido de ondas con trenzado posterior" loading="lazy" decoding="async" />
+              <figcaption><span>Peinados</span><strong>Trenzado suave</strong></figcaption>
+            </figure>
+            <figure class="gallery-card gallery-card-portrait" data-reveal>
+              <img class="site-photo" src="fotos%20pelu/corto%20con%20ondas%20y%20trenza%20lateral.jpeg" width="1200" height="1600" alt="Peinado corto con ondas y trenza lateral" loading="lazy" decoding="async" />
+              <figcaption><span>Peinados</span><strong>Ondas y trenza lateral</strong></figcaption>
+            </figure>
+            <figure class="gallery-card gallery-card-small" data-reveal>
+              <img class="site-photo" src="fotos%20pelu/antes%20y%20despues.jpeg" width="1206" height="1072" alt="Comparativa del cabello antes y después de un corte y alisado" loading="lazy" decoding="async" />
+              <figcaption><span>Transformación</span><strong>Antes y después</strong></figcaption>
+            </figure>
+            <figure class="gallery-card gallery-card-small" data-reveal>
+              <img class="site-photo" src="fotos%20pelu/maquillaje.jpeg" width="1200" height="1600" alt="Maquillaje natural con detalle violeta en los ojos" loading="lazy" decoding="async" />
+              <figcaption><span>Belleza</span><strong>Maquillaje natural</strong></figcaption>
+            </figure>
+            <figure class="gallery-card gallery-card-small" data-reveal>
+              <img class="site-photo" src="fotos%20pelu/u%C3%B1as%20manos%201.jpeg" width="1256" height="1600" alt="Manicura en tonos rosa y lavanda" loading="lazy" decoding="async" />
+              <figcaption><span>Manicura</span><strong>Rosa y lavanda</strong></figcaption>
+            </figure>
           </div>
         </div>
       </section>

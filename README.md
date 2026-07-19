@@ -2,16 +2,17 @@
 
 Landing estática de Zache Peluqueros, preparada para GitHub Pages y el dominio `zachepeluqueros.es`.
 
-## Sustituir los placeholders por fotos
+## Fotografías
 
-La página marca cada hueco con un comentario `<!-- FOTO: ... -->` en `index.html`. Para mantener el diseño:
+La portada, la historia del salón y la galería usan las imágenes reales de `fotos pelu/`. Las fotografías ya tienen dimensiones declaradas, carga diferida en la galería y textos alternativos descriptivos.
 
-- Foto principal: vertical, proporción 4:5, mínimo 1200 × 1500 px.
-- Foto de equipo/salón: vertical, proporción 4:5, mínimo 1000 × 1250 px.
-- Galería: una foto vertical 4:5 y dos fotos 4:3, mínimo 1000 px de ancho.
-- Equipo: tres retratos verticales 4:5, mínimo 1000 × 1250 px, además de nombre y especialidad.
-- Exportar preferentemente como `.webp`, calidad 80–85.
-- Añadir un texto `alt` breve que describa cada foto real.
+Queda pendiente completar la sección de equipo cuando estén disponibles los retratos y estos datos de cada estilista:
+
+- Nombre.
+- Especialidad o servicios principales.
+- Retrato vertical, preferentemente en proporción 4:5 y con al menos 1000 × 1250 px.
+
+Para futuras incorporaciones, exportar preferentemente como `.webp` con calidad 80–85 y añadir un texto `alt` breve que describa la imagen.
 
 ## Publicación
 
@@ -50,7 +51,7 @@ La web ya incluye `sitemap.xml`, `robots.txt`, canonical, metadatos sociales y d
 
 - Confirmar el horario publicado (actualmente lunes a viernes 10:00–19:00 y sábado 10:00–14:00).
 - Confirmar que los cuatro grupos de servicios reflejan exactamente lo que ofrece el salón.
-- Añadir fotos reales y, si se desea, la información legal del titular del negocio.
+- Añadir los retratos y datos del equipo y, si se desea, la información legal del titular del negocio.
 - Los datos identificativos del titular están incorporados en las tres páginas de `legal/`.
 
 ## Blog
