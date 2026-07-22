@@ -4,9 +4,9 @@ Landing estática de Zache Peluqueros, preparada para GitHub Pages y el dominio 
 
 ## Fotografías
 
-La portada, la historia del salón y la galería usan las imágenes reales de `fotos pelu/`. Las fotografías ya tienen dimensiones declaradas, carga diferida en la galería y textos alternativos descriptivos.
+La portada, la historia del salón, el perfil de María y la galería usan las imágenes reales de `fotos pelu/`. Las fotografías ya tienen dimensiones declaradas, carga diferida y textos alternativos descriptivos.
 
-Queda pendiente completar la sección de equipo cuando estén disponibles los retratos y estos datos de cada estilista:
+María ya aparece identificada como dueña y peluquera. Queda pendiente completar la sección cuando estén disponibles los retratos y estos datos del resto del equipo:
 
 - Nombre.
 - Especialidad o servicios principales.
@@ -51,7 +51,7 @@ La web ya incluye `sitemap.xml`, `robots.txt`, canonical, metadatos sociales y d
 
 - Confirmar el horario publicado (actualmente lunes a viernes 10:00–19:00 y sábado 10:00–14:00).
 - Confirmar que los cuatro grupos de servicios reflejan exactamente lo que ofrece el salón.
-- Añadir los retratos y datos del equipo y, si se desea, la información legal del titular del negocio.
+- Añadir los retratos y datos del resto del equipo y, si se desea, la información legal del titular del negocio.
 - Los datos identificativos del titular están incorporados en las tres páginas de `legal/`.
 
 ## Blog
