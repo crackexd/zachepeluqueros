@@ -70,6 +70,8 @@
       allow_google_signals: false,
       allow_ad_personalization_signals: false,
       anonymize_ip: true,
+      cookie_expires: 15552000,
+      cookie_update: false,
     });
 
     const tag = document.createElement('script');

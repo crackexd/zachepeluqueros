@@ -3,5 +3,5 @@
  * Formato esperado: G-XXXXXXXXXX
  */
 window.ZacheAnalyticsConfig = Object.freeze({
-  measurementId: '',
+  measurementId: 'G-T80T4H9S0W',
 });
