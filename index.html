@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; frame-src https://www.google.com; form-action 'none'; upgrade-insecure-requests" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; script-src 'self' https://www.googletagmanager.com; style-src 'self'; img-src 'self' data: https://www.google-analytics.com; font-src 'self'; connect-src https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com; frame-src https://www.google.com; form-action 'none'; upgrade-insecure-requests" />
     <meta name="referrer" content="no-referrer" />
     <meta name="theme-color" content="#171714" />
     <meta
       name="description"
-      content="Zache Peluqueros, salón unisex en Puente de Vallecas dirigido por María Fernández, peluquera con más de 30 años de experiencia. Color, rizos, cortes y recogidos en Madrid."
+      content="Zache Peluqueros, salón unisex en Madrid dirigido por María Fernández, peluquera con más de 30 años de experiencia. Color, rizos, cortes y recogidos."
     />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta name="author" content="Zache Peluqueros" />
@@ -20,7 +20,7 @@
     <meta property="og:title" content="Zache Peluqueros · Peluquería en Madrid" />
     <meta
       property="og:description"
-      content="Más de 30 años de oficio, creatividad y trato cercano. Color, rizos, cortes y recogidos en Puente de Vallecas."
+      content="Más de 30 años de oficio, creatividad y trato cercano. Color, rizos, cortes y recogidos en Madrid."
     />
     <meta property="og:url" content="https://zachepeluqueros.es/" />
     <meta property="og:image" content="https://zachepeluqueros.es/assets/compartir-zache.png?v=20260729-1" />
@@ -41,7 +41,7 @@
         "name": "Zache Peluqueros",
         "url": "https://zachepeluqueros.es/",
         "telephone": "+34914772737",
-        "description": "Salón unisex en Puente de Vallecas dirigido por María Fernández, peluquera con más de 30 años de experiencia en color, cortes, rizos y recogidos.",
+        "description": "Salón unisex en Madrid dirigido por María Fernández, peluquera con más de 30 años de experiencia en color, cortes, rizos y recogidos.",
         "image": "https://zachepeluqueros.es/assets/maria-fernandez-retrato-color.jpg",
         "founder": {
           "@type": "Person",
@@ -174,7 +174,7 @@
 
           <div class="story-copy" data-reveal>
             <p class="eyebrow"><span></span> Nuestra historia</p>
-            <h2 id="story-title">Técnica aprendida en Chueca. <em>Cercanía elegida en Vallecas.</em></h2>
+            <h2 id="story-title">Técnica aprendida en Chueca. <em>Cercanía elegida en Madrid.</em></h2>
             <div class="story-text">
               <p>
                 María empezó a trabajar mientras estudiaba peluquería y, recién titulada, pasó seis años en un salón de Chueca con una identidad muy marcada. Allí creció entre cortes actuales, color y una clientela muy diversa, aprendiendo una forma creativa y exigente de entender el oficio.
@@ -185,7 +185,7 @@
             </div>
             <div class="history-points" aria-label="Los valores de nuestra historia">
               <div><span>01</span><p><strong>Más de 30 años de oficio</strong>Experiencia para asesorar, explicar y adaptar cada trabajo.</p></div>
-              <div><span>02</span><p><strong>25 años en Vallecas</strong>Una peluquería moderna con la confianza de un salón de barrio.</p></div>
+              <div><span>02</span><p><strong>25 años en Madrid</strong>Una peluquería moderna con la confianza de un salón de barrio.</p></div>
               <div><span>03</span><p><strong>Resultados para la vida real</strong>Color, corte y textura pensados también para cuando sales del salón.</p></div>
             </div>
             <a class="text-link" href="https://www.instagram.com/zache_peluqueros/" target="_blank" rel="noopener noreferrer">
@@ -479,5 +479,7 @@
     </footer>
 
     <script src="script.js?v=20260722-1" defer></script>
+    <script src="analytics-config.js?v=20260729-1" defer></script>
+    <script src="analytics.js?v=20260729-1" defer></script>
   </body>
 </html>
