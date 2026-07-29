@@ -8,7 +8,7 @@
     <meta name="theme-color" content="#171714" />
     <meta
       name="description"
-      content="Zache Peluqueros, salón unisex en Madrid dirigido por María Fernández, peluquera con más de 30 años de experiencia. Color, rizos, cortes y recogidos."
+      content="Peluquería unisex en Puente de Vallecas, Madrid. Más de 30 años de experiencia en corte, color, mechas, rizos y recogidos. Pide cita por teléfono."
     />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta name="author" content="Zache Peluqueros" />
@@ -17,64 +17,128 @@
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="es_ES" />
     <meta property="og:site_name" content="Zache Peluqueros" />
-    <meta property="og:title" content="Zache Peluqueros · Peluquería en Madrid" />
+    <meta property="og:title" content="Peluquería en Puente de Vallecas | Zache Peluqueros" />
     <meta
       property="og:description"
-      content="Más de 30 años de oficio, creatividad y trato cercano. Color, rizos, cortes y recogidos en Madrid."
+      content="Más de 30 años de oficio y trato cercano. Corte, color, mechas, rizos y recogidos en la calle Javier de Miguel, Madrid."
     />
     <meta property="og:url" content="https://zachepeluqueros.es/" />
     <meta property="og:image" content="https://zachepeluqueros.es/assets/compartir-zache.png?v=20260729-1" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Zache Peluqueros, peluquería en Madrid" />
+    <meta property="og:image:alt" content="Zache Peluqueros, peluquería en Puente de Vallecas" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Peluquería en Puente de Vallecas | Zache Peluqueros" />
+    <meta name="twitter:description" content="Corte, color, mechas, rizos y recogidos con más de 30 años de experiencia en Madrid." />
+    <meta name="twitter:image" content="https://zachepeluqueros.es/assets/compartir-zache.png?v=20260729-2" />
 
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css?v=20260729-1" />
-    <title>Zache Peluqueros | Peluquería en Madrid</title>
+    <link rel="stylesheet" href="styles.css?v=20260729-2" />
+    <title>Peluquería en Puente de Vallecas | Zache Peluqueros</title>
 
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "HairSalon",
-        "@id": "https://zachepeluqueros.es/#negocio",
-        "name": "Zache Peluqueros",
-        "url": "https://zachepeluqueros.es/",
-        "telephone": "+34914772737",
-        "description": "Salón unisex en Madrid dirigido por María Fernández, peluquera con más de 30 años de experiencia en color, cortes, rizos y recogidos.",
-        "image": "https://zachepeluqueros.es/assets/maria-fernandez-retrato-color.jpg",
-        "founder": {
-          "@type": "Person",
-          "name": "María Fernández",
-          "jobTitle": "Fundadora y peluquera",
-          "knowsAbout": ["Coloración capilar", "Corte de cabello", "Cabello rizado", "Recogidos"]
-        },
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Calle de Javier de Miguel, 7",
-          "addressLocality": "Madrid",
-          "addressRegion": "Comunidad de Madrid",
-          "postalCode": "28018",
-          "addressCountry": "ES"
-        },
-        "areaServed": "Madrid",
-        "sameAs": [
-          "https://www.facebook.com/ZachePeluqueros/",
-          "https://www.instagram.com/zache_peluqueros/"
-        ],
-        "hasMap": "https://www.google.com/maps/search/?api=1&query=Zache+Peluqueros+Calle+de+Javier+de+Miguel+7+Madrid",
-        "openingHoursSpecification": [
+        "@graph": [
           {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-            "opens": "10:00",
-            "closes": "19:00"
+            "@type": "WebSite",
+            "@id": "https://zachepeluqueros.es/#sitio",
+            "url": "https://zachepeluqueros.es/",
+            "name": "Zache Peluqueros",
+            "alternateName": "Zache",
+            "inLanguage": "es"
           },
           {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": "Saturday",
-            "opens": "10:00",
-            "closes": "14:00"
+            "@type": "WebPage",
+            "@id": "https://zachepeluqueros.es/#pagina",
+            "url": "https://zachepeluqueros.es/",
+            "name": "Peluquería en Puente de Vallecas | Zache Peluqueros",
+            "description": "Peluquería unisex en Puente de Vallecas con más de 30 años de experiencia en corte, color, mechas, rizos y recogidos.",
+            "isPartOf": { "@id": "https://zachepeluqueros.es/#sitio" },
+            "about": { "@id": "https://zachepeluqueros.es/#negocio" },
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "url": "https://zachepeluqueros.es/assets/images/zache-peluqueros-peinado-novia.webp",
+              "width": 1061,
+              "height": 1067
+            },
+            "inLanguage": "es"
+          },
+          {
+            "@type": "Person",
+            "@id": "https://zachepeluqueros.es/#maria-fernandez",
+            "name": "María Fernández",
+            "jobTitle": "Fundadora y peluquera",
+            "image": "https://zachepeluqueros.es/assets/images/maria-fernandez-peluquera-madrid.webp",
+            "worksFor": { "@id": "https://zachepeluqueros.es/#negocio" },
+            "knowsAbout": ["Coloración capilar", "Corte de cabello", "Cabello rizado", "Recogidos"]
+          },
+          {
+            "@type": "HairSalon",
+            "@id": "https://zachepeluqueros.es/#negocio",
+            "name": "Zache Peluqueros",
+            "url": "https://zachepeluqueros.es/",
+            "telephone": "+34914772737",
+            "description": "Peluquería unisex en Puente de Vallecas dirigida por María Fernández, peluquera con más de 30 años de experiencia.",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://zachepeluqueros.es/assets/zache-logo.png",
+              "width": 512,
+              "height": 512
+            },
+            "image": [
+              "https://zachepeluqueros.es/assets/images/zache-peluqueros-peinado-novia.webp",
+              "https://zachepeluqueros.es/assets/images/fachada-zache-peluqueros-vallecas.webp",
+              "https://zachepeluqueros.es/assets/images/maria-fernandez-peluquera-madrid.webp"
+            ],
+            "founder": { "@id": "https://zachepeluqueros.es/#maria-fernandez" },
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Calle de Javier de Miguel, 7",
+              "addressLocality": "Madrid",
+              "addressRegion": "Comunidad de Madrid",
+              "postalCode": "28018",
+              "addressCountry": "ES"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 40.3892408,
+              "longitude": -3.6629248
+            },
+            "areaServed": [
+              { "@type": "Place", "name": "Puente de Vallecas" },
+              { "@type": "City", "name": "Madrid" }
+            ],
+            "sameAs": [
+              "https://www.facebook.com/ZachePeluqueros/",
+              "https://www.instagram.com/zache_peluqueros/"
+            ],
+            "hasMap": "https://www.google.com/maps/search/?api=1&query=Zache+Peluqueros+Calle+de+Javier+de+Miguel+7+Madrid",
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Servicios de Zache Peluqueros",
+              "itemListElement": [
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Corte y estilo" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Color y mechas" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cabello rizado" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Peinados y recogidos" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Manicura y maquillaje" } }
+              ]
+            },
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "10:00",
+                "closes": "19:00"
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "10:00",
+                "closes": "14:00"
+              }
+            ]
           }
         ]
       }
@@ -117,10 +181,10 @@
       <section class="hero" id="inicio" aria-labelledby="hero-title">
         <div class="container hero-grid">
           <div class="hero-copy" data-reveal>
-            <p class="eyebrow"><span></span> Peluquería en Madrid</p>
+            <p class="eyebrow"><span></span> Peluquería en Puente de Vallecas · Madrid</p>
             <h1 id="hero-title">Tu estilo,<br /><em>muy tú.</em></h1>
             <p class="hero-intro">
-              Oficio, cercanía y una mirada personal para que salgas sintiéndote bien. Así de sencillo.
+              Corte, color, rizos y recogidos con oficio, cercanía y una mirada personal. Para que salgas sintiéndote bien y sigas reconociéndote.
             </p>
             <div class="hero-actions">
               <a class="button button-primary" href="tel:+34914772737">
@@ -134,7 +198,7 @@
           <div class="hero-visual" data-reveal>
             <img
               class="site-photo hero-photo"
-              src="fotos%20pelu/especialista%20en%20bodas.jpeg"
+              src="assets/images/zache-peluqueros-peinado-novia.webp"
               width="1061"
               height="1067"
               alt="Estilista de Zache preparando el peinado de una novia"
@@ -162,9 +226,9 @@
           <div class="story-visual" data-reveal>
             <img
               class="site-photo story-photo"
-              src="fotos%20pelu/local%20por%20fuera%20puerta%20de%20noche.jpeg"
-              width="970"
-              height="2048"
+              src="assets/images/fachada-zache-peluqueros-vallecas.webp"
+              width="758"
+              height="1600"
               alt="Fachada iluminada de Zache Peluqueros en la calle Javier de Miguel"
               loading="lazy"
               decoding="async"
@@ -174,7 +238,7 @@
 
           <div class="story-copy" data-reveal>
             <p class="eyebrow"><span></span> Nuestra historia</p>
-            <h2 id="story-title">Técnica aprendida en Chueca. <em>Cercanía elegida en Madrid.</em></h2>
+            <h2 id="story-title">Técnica aprendida en Chueca. <em>Cercanía elegida en Vallecas.</em></h2>
             <div class="story-text">
               <p>
                 María empezó a trabajar mientras estudiaba peluquería y, recién titulada, pasó seis años en un salón de Chueca con una identidad muy marcada. Allí creció entre cortes actuales, color y una clientela muy diversa, aprendiendo una forma creativa y exigente de entender el oficio.
@@ -209,7 +273,7 @@
             <div class="team-profile-photo">
               <img
                 class="site-photo"
-                src="assets/maria-fernandez-retrato-color.jpg"
+                src="assets/images/maria-fernandez-peluquera-madrid.webp"
                 width="979"
                 height="1478"
                 alt="María Fernández, fundadora y peluquera de Zache Peluqueros"
@@ -256,30 +320,30 @@
               <p>Cortes pensados para tu rostro, tu cabello y tu manera de vivirlo.</p>
               <span class="service-icon" aria-hidden="true">↗</span>
             </article>
-            <article class="service-item">
+            <a class="service-item" href="servicios/color-y-mechas.html" aria-label="Más información sobre color y mechas">
               <span class="service-number">02</span>
               <h3>Color & mechas</h3>
               <p>Color con dimensión, brillo y un resultado que se sienta natural en ti.</p>
               <span class="service-icon" aria-hidden="true">↗</span>
-            </article>
-            <article class="service-item">
+            </a>
+            <a class="service-item" href="servicios/recogidos-eventos.html" aria-label="Más información sobre peinados y recogidos para eventos">
               <span class="service-number">03</span>
-              <h3>Peinados</h3>
+              <h3>Peinados & recogidos</h3>
               <p>Acabados cuidados para el día a día o para esas ocasiones que importan.</p>
               <span class="service-icon" aria-hidden="true">↗</span>
-            </article>
+            </a>
             <article class="service-item">
               <span class="service-number">04</span>
               <h3>Manicura & maquillaje</h3>
               <p>Detalles de belleza para completar tu estilo, desde las uñas hasta el maquillaje.</p>
               <span class="service-icon" aria-hidden="true">↗</span>
             </article>
-            <article class="service-item">
+            <a class="service-item" href="servicios/cabello-rizado.html" aria-label="Más información sobre corte y cuidado del cabello rizado">
               <span class="service-number">05</span>
-              <h3>Cuidado capilar</h3>
-              <p>Atención y recomendaciones adaptadas a las necesidades de tu cabello.</p>
+              <h3>Cabello rizado</h3>
+              <p>Corte, forma y recomendaciones adaptadas a tu textura y a tu rutina.</p>
               <span class="service-icon" aria-hidden="true">↗</span>
-            </article>
+            </a>
           </div>
 
           <p class="services-note" data-reveal>* Confirma en el salón la disponibilidad de cada servicio.</p>
@@ -301,39 +365,39 @@
 
           <div class="gallery-grid">
             <figure class="gallery-card gallery-card-featured" data-reveal>
-              <img class="site-photo" src="fotos%20pelu/ondas%20suaves%20con%20acabado%20brillante%20en%20tono%20rubio.jpeg" width="1200" height="1600" alt="Melena rubia con ondas suaves y acabado brillante" loading="lazy" decoding="async" />
+              <img class="site-photo" src="assets/images/rubio-ondas-brillantes.webp" width="1200" height="1600" alt="Melena rubia con ondas suaves y acabado brillante realizada en Zache" loading="lazy" decoding="async" />
               <figcaption><span>Color & acabado</span><strong>Rubio con luz</strong></figcaption>
             </figure>
             <figure class="gallery-card gallery-card-landscape" data-reveal>
-              <img class="site-photo" src="fotos%20pelu/colores%20con%20personalidad%201.jpeg" width="1200" height="1600" alt="Melena larga en tono cobrizo intenso" loading="lazy" decoding="async" />
+              <img class="site-photo" src="assets/images/color-cobrizo-melena.webp" width="1200" height="1600" alt="Color cobrizo intenso sobre melena larga realizado en Zache" loading="lazy" decoding="async" />
               <figcaption><span>Color</span><strong>Cobrizo con personalidad</strong></figcaption>
             </figure>
             <figure class="gallery-card gallery-card-landscape" data-reveal>
-              <img class="site-photo" src="fotos%20pelu/rizos%20con%20mechas%20con%20mucho%20brillo.jpeg" width="1200" height="1600" alt="Cabello corto rizado con mechas luminosas" loading="lazy" decoding="async" />
+              <img class="site-photo" src="assets/images/cabello-rizado-mechas.webp" width="1200" height="1600" alt="Cabello corto rizado con mechas luminosas y definición" loading="lazy" decoding="async" />
               <figcaption><span>Rizos & mechas</span><strong>Brillo y movimiento</strong></figcaption>
             </figure>
             <figure class="gallery-card gallery-card-portrait" data-reveal>
-              <img class="site-photo" src="fotos%20pelu/recogido%20bajo%20y%20elegante%20decorado%20con%20perlas.jpeg" width="1200" height="1600" alt="Recogido bajo elegante decorado con flores y perlas" loading="lazy" decoding="async" />
+              <img class="site-photo" src="assets/images/recogido-bajo-perlas.webp" width="1200" height="1600" alt="Recogido bajo elegante decorado con flores y perlas" loading="lazy" decoding="async" />
               <figcaption><span>Eventos</span><strong>Recogido con perlas</strong></figcaption>
             </figure>
             <figure class="gallery-card gallery-card-portrait" data-reveal>
-              <img class="site-photo" src="fotos%20pelu/peina%20semirecogido%20con%20trenzado.jpeg" width="1200" height="1600" alt="Semirrecogido de ondas con trenzado posterior" loading="lazy" decoding="async" />
+              <img class="site-photo" src="assets/images/semirrecogido-trenzado.webp" width="1200" height="1600" alt="Semirrecogido de ondas con trenzado posterior" loading="lazy" decoding="async" />
               <figcaption><span>Peinados</span><strong>Trenzado suave</strong></figcaption>
             </figure>
             <figure class="gallery-card gallery-card-portrait" data-reveal>
-              <img class="site-photo" src="fotos%20pelu/corto%20con%20ondas%20y%20trenza%20lateral.jpeg" width="1200" height="1600" alt="Peinado corto con ondas y trenza lateral" loading="lazy" decoding="async" />
+              <img class="site-photo" src="assets/images/peinado-ondas-trenza-lateral.webp" width="1200" height="1600" alt="Peinado corto con ondas y trenza lateral" loading="lazy" decoding="async" />
               <figcaption><span>Peinados</span><strong>Ondas y trenza lateral</strong></figcaption>
             </figure>
             <figure class="gallery-card gallery-card-small" data-reveal>
-              <img class="site-photo" src="fotos%20pelu/antes%20y%20despues.jpeg" width="1206" height="1072" alt="Comparativa del cabello antes y después de un corte y alisado" loading="lazy" decoding="async" />
+              <img class="site-photo" src="assets/images/antes-despues-corte-alisado.webp" width="1206" height="1072" alt="Antes y después de un corte y alisado realizado en Zache" loading="lazy" decoding="async" />
               <figcaption><span>Transformación</span><strong>Antes y después</strong></figcaption>
             </figure>
             <figure class="gallery-card gallery-card-small" data-reveal>
-              <img class="site-photo" src="fotos%20pelu/maquillaje.jpeg" width="1200" height="1600" alt="Maquillaje natural con detalle violeta en los ojos" loading="lazy" decoding="async" />
+              <img class="site-photo" src="assets/images/maquillaje-natural-violeta.webp" width="1200" height="1600" alt="Maquillaje natural con detalle violeta en los ojos" loading="lazy" decoding="async" />
               <figcaption><span>Belleza</span><strong>Maquillaje natural</strong></figcaption>
             </figure>
             <figure class="gallery-card gallery-card-small" data-reveal>
-              <img class="site-photo" src="fotos%20pelu/u%C3%B1as%20manos%201.jpeg" width="1256" height="1600" alt="Manicura en tonos rosa y lavanda" loading="lazy" decoding="async" />
+              <img class="site-photo" src="assets/images/manicura-rosa-lavanda.webp" width="1256" height="1600" alt="Manicura en tonos rosa y lavanda realizada en Zache" loading="lazy" decoding="async" />
               <figcaption><span>Manicura</span><strong>Rosa y lavanda</strong></figcaption>
             </figure>
           </div>
@@ -435,6 +499,39 @@
         </div>
       </section>
 
+      <section class="faq section" id="preguntas" aria-labelledby="faq-title">
+        <div class="container faq-grid">
+          <div class="faq-heading" data-reveal>
+            <p class="eyebrow eyebrow-light"><span></span> Antes de venir</p>
+            <h2 id="faq-title">Lo que más nos <em>preguntáis.</em></h2>
+            <p>Si tu duda no aparece aquí, llámanos. Preferimos escuchar tu caso antes que darte una respuesta automática.</p>
+          </div>
+
+          <div class="faq-list" data-reveal>
+            <details>
+              <summary>¿Dónde está Zache Peluqueros?</summary>
+              <p>Estamos en la calle de Javier de Miguel, 7, código postal 28018, en Puente de Vallecas (Madrid). En la sección <a href="#visitanos">Ven a vernos</a> puedes abrir la ruta directamente en Google Maps.</p>
+            </details>
+            <details>
+              <summary>¿Cómo puedo pedir cita?</summary>
+              <p>Las citas se conciertan por teléfono en el <a href="tel:+34914772737">914 77 27 37</a>. Así podemos preguntarte qué buscas, calcular el tiempo necesario y orientarte mejor.</p>
+            </details>
+            <details>
+              <summary>¿La peluquería es unisex?</summary>
+              <p>Sí. Trabajamos cortes y estilos para mujeres y hombres, siempre adaptados al cabello, al rostro y a la forma de llevarlo de cada persona.</p>
+            </details>
+            <details>
+              <summary>¿Trabajáis cabello rizado, color y recogidos?</summary>
+              <p>Sí. María trabaja corte de rizos, color y mechas —con especial atención a los rubios y los resultados naturales—, además de peinados y recogidos para celebraciones.</p>
+            </details>
+            <details>
+              <summary>¿Cuál es el horario?</summary>
+              <p>Abrimos de lunes a viernes de 10:00 a 19:00 y los sábados de 10:00 a 14:00. Los domingos cerramos; en festivos conviene confirmar antes por teléfono o consultar nuestras redes.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
       <section class="final-cta" aria-labelledby="final-title">
         <div class="container final-cta-inner" data-reveal>
           <p class="eyebrow eyebrow-light"><span></span> Hablemos</p>
@@ -452,7 +549,7 @@
             <span class="brand-mark" aria-hidden="true">Z</span>
             <span class="brand-name">Zache<small>Peluqueros</small></span>
           </a>
-          <p>Tu peluquería de confianza en Madrid.</p>
+          <p>Tu peluquería de confianza en Puente de Vallecas.</p>
         </div>
         <div class="footer-column">
           <p class="footer-title">Encuéntranos</p>
@@ -478,7 +575,7 @@
       </div>
     </footer>
 
-    <script src="script.js?v=20260722-1" defer></script>
+    <script src="script.js?v=20260729-2" defer></script>
     <script src="analytics-config.js?v=20260729-1" defer></script>
     <script src="analytics.js?v=20260729-1" defer></script>
   </body>

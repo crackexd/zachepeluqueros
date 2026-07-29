@@ -1,32 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://zachepeluqueros.es/</loc>
     <lastmod>2026-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://zachepeluqueros.es/assets/images/zache-peluqueros-peinado-novia.webp</image:loc>
+      <image:title>Peinado de novia en Zache Peluqueros</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://zachepeluqueros.es/assets/images/fachada-zache-peluqueros-vallecas.webp</image:loc>
+      <image:title>Fachada de Zache Peluqueros en Puente de Vallecas</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://zachepeluqueros.es/assets/images/maria-fernandez-peluquera-madrid.webp</image:loc>
+      <image:title>María Fernández, fundadora de Zache Peluqueros</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://zachepeluqueros.es/servicios/color-y-mechas.html</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://zachepeluqueros.es/assets/images/rubio-ondas-brillantes.webp</image:loc>
+      <image:title>Color rubio con ondas realizado en Zache Peluqueros</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://zachepeluqueros.es/servicios/cabello-rizado.html</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://zachepeluqueros.es/assets/images/cabello-rizado-mechas.webp</image:loc>
+      <image:title>Cabello rizado con mechas realizado en Zache Peluqueros</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://zachepeluqueros.es/servicios/recogidos-eventos.html</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://zachepeluqueros.es/assets/images/recogido-bajo-perlas.webp</image:loc>
+      <image:title>Recogido bajo con perlas para eventos</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zachepeluqueros.es/blog/</loc>
-    <lastmod>2026-07-22</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://zachepeluqueros.es/blog/cuidar-el-cabello.html</loc>
-    <lastmod>2026-07-22</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://zachepeluqueros.es/blog/microbioma-cuero-cabelludo.html</loc>
-    <lastmod>2026-07-22</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://zachepeluqueros.es/blog/canas-estres-memoria.html</loc>
-    <lastmod>2026-07-22</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
