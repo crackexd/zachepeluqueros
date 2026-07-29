@@ -734,6 +734,26 @@ svg {
   line-height: 1.55;
 }
 
+.team-profile-specialties {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 28px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.team-profile-specialties li {
+  padding: 8px 13px;
+  border: 1px solid rgba(243,239,229,.2);
+  border-radius: 999px;
+  color: rgba(243,239,229,.7);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
 .team-profile-footer {
   display: flex;
   gap: 18px;
