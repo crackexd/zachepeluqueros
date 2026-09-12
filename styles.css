@@ -2290,6 +2290,10 @@ svg {
 }
 
 @media (max-width: 1040px) {
+  .site-header {
+    --menu-top: 86px;
+  }
+
   .container {
     width: min(calc(100% - 36px), var(--max-width));
   }
@@ -2307,16 +2311,18 @@ svg {
   }
 
   .main-nav {
-    position: fixed;
+    position: absolute;
     z-index: 2;
-    inset: 0;
+    inset: var(--menu-top) 0 0;
     display: flex;
     visibility: hidden;
     flex-direction: column;
-    gap: 20px;
+    gap: clamp(12px, 2dvh, 20px);
     align-items: flex-start;
-    justify-content: center;
-    padding: 100px 32px 50px;
+    justify-content: flex-start;
+    padding: 24px 32px calc(32px + env(safe-area-inset-bottom));
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
     color: var(--ink);
     background: var(--cream);
     opacity: 0;
@@ -2338,19 +2344,27 @@ svg {
   }
 
   .main-nav a {
+    flex-shrink: 0;
+    padding-block: 4px;
     font-family: var(--serif);
-    font-size: clamp(35px, 10vw, 58px);
+    font-size: clamp(35px, 9vw, 52px);
     font-weight: 400;
     letter-spacing: -0.035em;
+    line-height: 1.1;
   }
 
   .main-nav .nav-call {
-    margin-top: 15px;
+    min-height: 48px;
+    margin-top: 8px;
     padding: 10px 24px;
     font-family: var(--sans);
     font-size: 15px;
     font-weight: 700;
     letter-spacing: 0;
+  }
+
+  .menu-open .cookie-settings-button {
+    display: none;
   }
 
   .hero-grid {
@@ -2444,6 +2458,10 @@ svg {
 
   .header-inner {
     min-height: 74px;
+  }
+
+  .site-header {
+    --menu-top: 74px;
   }
 
   .hero-grid {

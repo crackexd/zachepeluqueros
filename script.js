@@ -18,6 +18,7 @@ menuButton?.addEventListener('click', () => {
   menu?.classList.toggle('is-open', willOpen);
   header?.classList.toggle('menu-active', willOpen);
   document.body.classList.toggle('menu-open', willOpen);
+  if (willOpen && menu) menu.scrollTop = 0;
   const label = menuButton.querySelector('.sr-only');
   if (label) label.textContent = willOpen ? 'Cerrar menú' : 'Abrir menú';
 });
