@@ -39,6 +39,65 @@ window.addEventListener('scroll', syncHeader, { passive: true });
 
 if (year) year.textContent = new Date().getFullYear();
 
+// Se comparte siempre la URL pública del artículo, sin parámetros ni anclas.
+document.querySelectorAll('[data-article-share]').forEach((panel) => {
+  const url = panel.querySelector('[data-share-url]')?.value;
+  const title = document.querySelector('.article-hero h1')?.textContent.trim();
+  if (!url || !title) return;
+
+  const copyButton = panel.querySelector('[data-share-copy]');
+  const nativeButton = panel.querySelector('[data-share-native]');
+  const fallback = panel.querySelector('[data-share-fallback]');
+  const input = panel.querySelector('[data-share-url]');
+  const status = panel.querySelector('[data-share-status]');
+  const shareData = { title, url };
+  const showManualCopy = (message) => {
+    fallback.hidden = false;
+    status.textContent = message;
+    input.focus();
+    input.select();
+  };
+
+  copyButton.hidden = false;
+  copyButton.addEventListener('click', async () => {
+    copyButton.disabled = true;
+    status.textContent = '';
+    try {
+      if (!navigator.clipboard?.writeText) throw new Error('Clipboard unavailable');
+      await navigator.clipboard.writeText(url);
+      fallback.hidden = true;
+      status.textContent = 'Enlace copiado. Ya puedes enviarlo a quien quieras.';
+    } catch {
+      showManualCopy('Copia el enlace seleccionado para compartir este artículo.');
+    } finally {
+      copyButton.disabled = false;
+    }
+  });
+
+  let canShare = window.isSecureContext && typeof navigator.share === 'function';
+  try {
+    if (canShare && navigator.canShare) canShare = navigator.canShare(shareData);
+  } catch {
+    canShare = false;
+  }
+  if (!canShare) return;
+
+  nativeButton.hidden = false;
+  nativeButton.addEventListener('click', async () => {
+    nativeButton.disabled = true;
+    status.textContent = '';
+    try {
+      await navigator.share(shareData);
+    } catch (error) {
+      if (error.name !== 'AbortError') {
+        showManualCopy('Puedes copiar este enlace o compartirlo por WhatsApp.');
+      }
+    } finally {
+      nativeButton.disabled = false;
+    }
+  });
+});
+
 const revealItems = document.querySelectorAll('[data-reveal]');
 
 if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {

@@ -1649,6 +1649,105 @@ svg {
   padding-block: 100px 130px;
 }
 
+.article-share {
+  margin-top: 30px;
+  padding-top: 24px;
+  border-top: 1px solid currentColor;
+  font-family: var(--sans);
+}
+
+.article-share-label {
+  margin: 0 0 14px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.article-share-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.article-share-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 12px 18px;
+  border: 1px solid currentColor;
+  border-radius: 2px;
+  color: inherit;
+  background: transparent;
+  font: 600 14px/1.4 var(--sans);
+  text-decoration: none;
+  cursor: pointer;
+  transition: background .2s, color .2s;
+}
+
+.article-share-action:hover {
+  color: var(--cream);
+  background: var(--ink);
+}
+
+.article-hero .article-share-action:hover {
+  color: var(--ink);
+  background: var(--cream);
+}
+
+.article-share-action:focus-visible,
+.article-share-input:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+.article-share-action:disabled {
+  opacity: .6;
+  cursor: wait;
+}
+
+.article-share [hidden] {
+  display: none;
+}
+
+.article-share-status {
+  min-height: 1.5em;
+  margin: 12px 0 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.article-share-fallback {
+  max-width: 680px;
+  margin-top: 14px;
+}
+
+.article-share-fallback label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+
+.article-share-input {
+  width: 100%;
+  min-width: 0;
+  min-height: 48px;
+  padding: 12px;
+  border: 1px solid currentColor;
+  border-radius: 2px;
+  color: inherit;
+  background: transparent;
+  font: 14px/1.5 var(--sans);
+}
+
+.article-share-section {
+  padding-block: 0 64px;
+}
+
+.article-share-section .article-share {
+  margin-top: 0;
+}
+
 .article-aside {
   color: #777267;
   font-size: 11px;
