@@ -2106,15 +2106,232 @@ svg {
   box-shadow: 0 0.5rem 1.5rem rgba(48, 40, 32, 0.2);
 }
 
-[data-reveal] {
+.js-reveal [data-reveal] {
   opacity: 0;
   transform: translateY(28px);
   transition: opacity 700ms ease, transform 700ms cubic-bezier(.2,.65,.2,1);
 }
 
-[data-reveal].is-visible {
+.js-reveal [data-reveal].is-visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.hero-booking-note {
+  margin: 22px 0 12px;
+  color: rgba(243, 239, 229, .75);
+  font-size: 13px;
+}
+
+.hero-service-link {
+  display: inline-block;
+  padding-block: 8px;
+  color: var(--copper-light);
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.service-shortcuts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.service-shortcuts a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  padding: 12px 20px;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  font-size: 14px;
+  line-height: 1.4;
+  transition: background-color 180ms, color 180ms;
+}
+
+.service-shortcuts a:hover {
+  color: var(--ink);
+  background: var(--copper-light);
+}
+
+.service-related {
+  padding-block: 55px;
+  color: var(--cream);
+  background: var(--ink-soft);
+}
+
+.service-related h2 {
+  margin: 0;
+  font-size: clamp(32px, 4vw, 48px);
+}
+
+.service-related p {
+  max-width: 720px;
+  margin: 24px 0 0;
+  color: rgba(243, 239, 229, .75);
+  font-size: 14px;
+}
+
+.service-related p a,
+.service-detail-copy > p a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.gallery-service-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding-block: 8px;
+  font-size: 13px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.appointment {
+  background: var(--cream);
+}
+
+.appointment-heading {
+  max-width: 850px;
+}
+
+.appointment-heading > p:last-child {
+  max-width: 590px;
+  font-family: var(--serif);
+  font-size: 21px;
+}
+
+.appointment-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 36px;
+  margin: 50px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.appointment-steps li {
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+}
+
+.appointment-steps li > span {
+  color: #814429;
+  font-family: var(--serif);
+  font-style: italic;
+}
+
+.appointment-steps h3 {
+  margin: 16px 0;
+  font-family: var(--serif);
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.appointment-steps p {
+  margin: 0;
+  color: #58574d;
+  font-size: 15px;
+}
+
+.appointment-steps p a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.appointment-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 28px;
+  margin-top: 42px;
+}
+
+.appointment-actions .button-primary {
+  color: var(--paper);
+  background: var(--ink);
+}
+
+.contact-dock {
+  display: none;
+}
+
+.article-layout > * {
+  min-width: 0;
+}
+
+.article-content,
+.article-sources {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 680px) {
+  .service-hero h1 {
+    font-size: clamp(44px, 10.5vw, 70px);
+    overflow-wrap: anywhere;
+  }
+
+  .appointment-steps {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .has-contact-dock {
+    padding-bottom: calc(72px + env(safe-area-inset-bottom));
+  }
+
+  .contact-dock {
+    position: fixed;
+    z-index: 60;
+    inset: auto 0 0;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 10px;
+    padding: 10px 14px calc(10px + env(safe-area-inset-bottom));
+    color: var(--ink);
+    background: var(--paper);
+    border-top: 1px solid var(--line);
+    box-shadow: 0 -5px 24px rgba(23, 23, 20, .1);
+  }
+
+  .contact-dock a {
+    display: flex;
+    min-height: 48px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+
+  .contact-dock .contact-dock-call {
+    color: var(--paper);
+    background: var(--ink);
+  }
+
+  .contact-dock a span {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .has-contact-dock .cookie-settings-button {
+    bottom: calc(82px + env(safe-area-inset-bottom));
+  }
+
+  .has-contact-dock .cookie-consent {
+    bottom: calc(82px + env(safe-area-inset-bottom));
+    max-height: calc(100dvh - 110px - env(safe-area-inset-bottom));
+    overflow-y: auto;
+  }
+
+  .menu-open .contact-dock {
+    display: none;
+  }
 }
 
 @media (max-width: 1040px) {

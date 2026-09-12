@@ -15,7 +15,8 @@
     try {
       const saved = JSON.parse(localStorage.getItem(storageKey) || 'null');
       if (!saved || !['accepted', 'rejected'].includes(saved.choice)) return null;
-      if (Date.now() - Number(saved.savedAt) > consentMaxAge) {
+      const savedAt = Number(saved.savedAt);
+      if (!Number.isFinite(savedAt) || savedAt <= 0 || savedAt > Date.now() || Date.now() - savedAt > consentMaxAge) {
         localStorage.removeItem(storageKey);
         return null;
       }
@@ -25,7 +26,10 @@
     }
   };
 
+  let currentConsent = readConsent();
+
   const writeConsent = (choice) => {
+    currentConsent = choice;
     try {
       localStorage.setItem(storageKey, JSON.stringify({ choice, savedAt: Date.now() }));
     } catch {
@@ -96,15 +100,17 @@
   };
 
   const getCtaLocation = (element) => {
+    if (element.closest('.contact-dock')) return 'barra_movil';
     if (element.closest('header')) return 'cabecera';
     if (element.closest('footer')) return 'pie';
     return element.closest('section')?.id || 'contenido';
   };
 
-  const sendEvent = (eventName, element) => {
-    if (readConsent() !== 'accepted' || !analyticsLoaded || !window.gtag) return;
+  const sendEvent = (eventName, element, parameters = {}) => {
+    if (currentConsent !== 'accepted' || !analyticsLoaded || !window.gtag) return;
     window.gtag('event', eventName, {
       ubicacion_cta: getCtaLocation(element),
+      ...parameters,
       transport_type: 'beacon',
     });
   };
@@ -117,10 +123,19 @@
       else if (/google\.[^/]+\/maps/i.test(link.href)) sendEvent('click_como_llegar', link);
       else if (/instagram\.com/i.test(link.href)) sendEvent('click_instagram', link);
       else if (/facebook\.com/i.test(link.href)) sendEvent('click_facebook', link);
+      else if (link.origin === window.location.origin && /\/servicios\/[^/]+\.html$/.test(link.pathname)) {
+        sendEvent('click_ver_servicio', link, { servicio: link.pathname.split('/').pop().replace('.html', '') });
+      } else if (link.hash === '#cita') sendEvent('click_info_cita', link);
     }
 
     const mapButton = event.target.closest('[data-load-map]');
     if (mapButton) sendEvent('click_cargar_mapa', mapButton);
+  });
+
+  document.querySelectorAll('.faq-list details').forEach((answer, index) => {
+    answer.addEventListener('toggle', () => {
+      if (answer.open) sendEvent('abrir_pregunta', answer, { pregunta_id: `pregunta_${index + 1}` });
+    });
   });
 
   const banner = document.createElement('section');
@@ -131,7 +146,7 @@
     <div class="cookie-consent__content">
       <div>
         <p class="cookie-consent__title">Tu privacidad, primero</p>
-        <p>Con tu permiso, usamos Google Analytics para contar visitas y clics en llamar o cómo llegar. No activamos publicidad personalizada. <a href="/legal/cookies.html">Más información</a>.</p>
+        <p>Con tu permiso, usamos Google Analytics para contar visitas, clics en servicios, llamar o cómo llegar y consultas de preguntas frecuentes. No activamos publicidad personalizada. <a href="/legal/cookies.html">Más información</a>.</p>
       </div>
       <div class="cookie-consent__actions">
         <button type="button" data-consent-choice="rejected">Rechazar</button>
@@ -161,7 +176,7 @@
     if (!button) return;
 
     const choice = button.dataset.consentChoice;
-    const wasAccepted = readConsent() === 'accepted';
+    const wasAccepted = currentConsent === 'accepted';
     writeConsent(choice);
 
     if (choice === 'accepted') {
@@ -183,7 +198,25 @@
   settingsButton.addEventListener('click', showBanner);
   document.body.append(banner, settingsButton);
 
-  const consent = readConsent();
+  window.addEventListener('storage', (event) => {
+    if (event.key !== storageKey && event.key !== null) return;
+    const wasAccepted = currentConsent === 'accepted';
+    currentConsent = readConsent();
+    if (wasAccepted && currentConsent !== 'accepted') {
+      setGoogleConsent('denied');
+      clearGoogleAnalyticsCookies();
+      window.location.reload();
+    } else if (currentConsent === 'accepted') {
+      loadAnalytics();
+      hideBanner();
+    } else if (currentConsent === 'rejected') {
+      hideBanner();
+    } else {
+      showBanner();
+    }
+  });
+
+  const consent = currentConsent;
   if (consent === 'accepted') {
     loadAnalytics();
     settingsButton.hidden = false;

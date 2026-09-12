@@ -60,6 +60,7 @@ loadMapButton?.addEventListener('click', () => {
 const revealItems = document.querySelectorAll('[data-reveal]');
 
 if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  document.documentElement.classList.add('js-reveal');
   const revealObserver = new IntersectionObserver(
     (entries, observer) => {
       entries.forEach((entry) => {
@@ -74,4 +75,17 @@ if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-mot
   revealItems.forEach((item) => revealObserver.observe(item));
 } else {
   revealItems.forEach((item) => item.classList.add('is-visible'));
+}
+
+// Los enlaces a un servicio complementario abren su respuesta antes de navegar.
+document.querySelectorAll('a[href="#preguntas-belleza"]').forEach((link) => {
+  link.addEventListener('click', () => {
+    const answer = document.getElementById('preguntas-belleza');
+    if (answer) answer.open = true;
+  });
+});
+
+if (window.location.hash === '#preguntas-belleza') {
+  const answer = document.getElementById('preguntas-belleza');
+  if (answer) answer.open = true;
 }

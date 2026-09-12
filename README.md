@@ -50,10 +50,18 @@ La web ya incluye `sitemap.xml`, `robots.txt`, canonical, metadatos sociales y d
 ## Antes de darla por definitiva
 
 - Confirmar el horario publicado (actualmente lunes a viernes 10:00–19:00 y sábado 10:00–14:00).
-- Confirmar que los cuatro grupos de servicios reflejan exactamente lo que ofrece el salón.
+- Confirmar que el catálogo publicado refleja exactamente lo que ofrece el salón.
 - Añadir los retratos y datos del resto del equipo y, si se desea, la información legal del titular del negocio.
 - Los datos identificativos del titular están incorporados en las tres páginas de `legal/`.
 
 ## Blog
 
 El índice está en `blog/index.html` y el primer artículo completo sirve de plantilla en `blog/cuidar-el-cabello.html`. Para publicar otro artículo, duplica esa plantilla, cambia el contenido y añade una tarjeta en el índice y una URL en `sitemap.xml`.
+
+## Plan maestro de septiembre de 2026
+
+La revisión y el estado de las propuestas están en [docs/revision-plan-web-2026.md](docs/revision-plan-web-2026.md). La referencia de datos publicados y los campos pendientes están en [docs/datos-maestros-zache.md](docs/datos-maestros-zache.md).
+
+El sitio cuenta con cinco páginas de servicio: corte y estilo, color y mechas, cabello rizado, peinados y acabados y recogidos para eventos. Las reservas siguen siendo telefónicas. El blog, la galería y la portada enlazan a los servicios, y las páginas públicas incorporan un acceso móvil a cita y mapa.
+
+Analytics incorpora los eventos `click_ver_servicio`, `click_info_cita` y `abrir_pregunta`, además de las intenciones de llamada y ruta existentes. Todos requieren consentimiento. La documentación explica las dimensiones que debe configurar el propietario en GA4 y los límites de interpretar estos clics como citas.
