@@ -128,8 +128,6 @@
       } else if (link.hash === '#cita') sendEvent('click_info_cita', link);
     }
 
-    const mapButton = event.target.closest('[data-load-map]');
-    if (mapButton) sendEvent('click_cargar_mapa', mapButton);
   });
 
   document.querySelectorAll('.faq-list details').forEach((answer, index) => {

@@ -23,7 +23,8 @@ Las prioridades del plan encajan con el salón: coherencia de datos, servicios c
 | Evitar reseñas autocontroladas, 6.4 | No se añaden estrellas, testimonios ni cantidades de reseñas inventadas |
 | Sitemap y rastreo, 6.4 | Dos nuevas URLs, fechas de modificación actualizadas y comprobación de robots.txt |
 | Medición, 0.7 y 8.5 | Eventos nuevos para ver servicios, información de cita y apertura de FAQ; llamadas identificadas desde la barra móvil |
-| Coherencia de historia | Antigüedad del salón expresada como aproximada hasta disponer del año exacto |
+| Coherencia de historia | 25 años en el barrio, según la redacción confirmada por el propietario el 13 de septiembre de 2026 |
+| Mapa de la portada | Carga automática de Google Maps, también sin JavaScript; acceso externo separado del mapa para mantener sus controles y atribución visibles |
 | Robustez de contenido | Contenido visible si JavaScript está desactivado; animación progresiva solo cuando se puede ejecutar |
 | Robustez del consentimiento | Elección de sesión respetada aunque localStorage esté bloqueado; consentimientos con fecha inválida descartados |
 
@@ -55,7 +56,7 @@ No se crean automatizaciones mensuales ni se modifican cuentas sociales: el enca
 | `click_info_cita` | Clic a la explicación de cómo pedir cita | `ubicacion_cta` |
 | `abrir_pregunta` | Apertura de una FAQ | `pregunta_id`, `ubicacion_cta`; la página distingue el conjunto de preguntas |
 
-Se mantienen los eventos de Instagram, Facebook y carga de mapa. Los eventos nuevos se envían solo con aceptación de Analytics. No se envían nombres, teléfonos de clientes ni texto libre.
+Se mantienen los eventos de Instagram y Facebook. El antiguo evento de pulsación para cargar el mapa se elimina al pasar a carga automática. Los eventos se envían solo con aceptación de Analytics. No se envían nombres, teléfonos de clientes ni texto libre.
 
 En la cuenta de GA4, crear dimensiones personalizadas de ámbito evento para `servicio`, `ubicacion_cta` y `pregunta_id` si se quieren comparar en los informes. Esta configuración de cuenta requiere acceso del propietario. Se puede marcar `click_llamar` como evento clave de intención de contacto, sin contarlo como reserva realizada.
 

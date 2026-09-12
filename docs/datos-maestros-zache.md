@@ -12,7 +12,7 @@ Revisión: 12 de septiembre de 2026. Fuente: web existente, perfil interno de Ma
 | Web | https://zachepeluqueros.es/ | Dominio de este proyecto |
 | Responsable | María Fernández, fundadora y peluquera | Documentado en el perfil de María |
 | Experiencia | Más de 30 años de oficio | Documentada; no se infiere fecha de inicio |
-| Antigüedad de Zache | Alrededor de 25 años en el barrio | Año exacto pendiente; se evita publicar una fecha inventada |
+| Antigüedad de Zache | 25 años en el barrio | Redacción confirmada por el propietario el 13 de septiembre de 2026; no se infiere una fecha de apertura |
 | Horario publicado | L-V 10:00-19:00 · S 10:00-14:00 · D cerrado | Confirmar vigencia y posibles pausas; festivos por teléfono |
 | Reserva operativa | Por teléfono | No se añaden reservas online ni WhatsApp sin confirmación |
 | Instagram | https://www.instagram.com/zache_peluqueros/ | Cuenta enlazada en la web existente |

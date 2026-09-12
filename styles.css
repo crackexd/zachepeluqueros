@@ -1225,59 +1225,13 @@ svg {
   background: #ddd8ca;
 }
 
-.map-consent {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: clamp(28px, 5vw, 60px);
-  padding-bottom: 118px;
-  color: var(--cream);
-  background:
-    radial-gradient(circle at 86% 16%, rgba(217,155,118,.26), transparent 32%),
-    linear-gradient(145deg, #33342f, #171714);
-}
-
-.map-consent .button {
-  align-self: flex-start;
-}
-
-.map-wordmark {
-  align-self: flex-start;
-  padding: 7px 11px;
-  border: 1px solid rgba(243,239,229,.35);
-  border-radius: 999px;
-  font-size: 9px;
-  font-weight: 750;
-  letter-spacing: .14em;
-  text-transform: uppercase;
-}
-
-.map-address {
-  margin: 0;
-  font-family: var(--serif);
-  font-size: clamp(30px, 4vw, 50px);
-  letter-spacing: -.04em;
-  line-height: 1.08;
-}
-
-.map-privacy {
-  max-width: 390px;
-  margin: 20px 0 28px;
-  color: rgba(243,239,229,.56);
-  font-size: 12px;
-}
-
 .map-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 100%;
+  height: calc(100% - 72px);
   border: 0;
-}
-
-.map-card.is-loaded .map-button {
-  background: rgba(23,23,20,.92);
-  backdrop-filter: blur(10px);
 }
 
 .map-art {
@@ -1379,10 +1333,11 @@ svg {
 
 .map-button {
   position: absolute;
-  right: 20px;
-  bottom: 20px;
-  left: 20px;
+  right: 0;
+  bottom: 0;
+  left: 0;
   display: flex;
+  min-height: 72px;
   align-items: center;
   justify-content: space-between;
   padding: 16px 20px;
