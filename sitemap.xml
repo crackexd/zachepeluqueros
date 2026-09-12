@@ -51,13 +51,13 @@
   </url>
   <url>
     <loc>https://zachepeluqueros.es/blog/</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://zachepeluqueros.es/blog/cuidar-el-cabello.html</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -75,12 +75,16 @@
   </url>
   <url>
     <loc>https://zachepeluqueros.es/servicios/corte-y-estilo.html</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-13</lastmod>
     <image:image><image:loc>https://zachepeluqueros.es/assets/images/antes-despues-corte-alisado.webp</image:loc><image:title>Corte y estilo en Zache Peluqueros</image:title></image:image>
   </url>
   <url>
     <loc>https://zachepeluqueros.es/servicios/peinados-y-acabados.html</loc>
     <lastmod>2026-09-12</lastmod>
     <image:image><image:loc>https://zachepeluqueros.es/assets/images/peinado-ondas-trenza-lateral.webp</image:loc><image:title>Peinados y acabados en Zache Peluqueros</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://zachepeluqueros.es/blog/cortar-puntas-crecimiento-mitos.html</loc>
+    <lastmod>2026-09-13</lastmod>
   </url>
 </urlset>
