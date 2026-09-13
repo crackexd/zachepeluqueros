@@ -2190,6 +2190,14 @@ svg {
   transform: translateY(0);
 }
 
+/* La lectura nunca depende de la animación ni de la longitud del artículo. */
+.js-reveal .article-hero [data-reveal],
+.js-reveal .article-layout [data-reveal] {
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+
 .hero-booking-note {
   margin: 22px 0 12px;
   color: rgba(243, 239, 229, .75);

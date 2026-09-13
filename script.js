@@ -98,7 +98,10 @@ document.querySelectorAll('[data-article-share]').forEach((panel) => {
   });
 });
 
-const revealItems = document.querySelectorAll('[data-reveal]');
+// El contenido de lectura debe estar visible desde la carga, sin esperar al scroll.
+const revealItems = Array.from(document.querySelectorAll('[data-reveal]')).filter(
+  (item) => !item.closest('.article-hero, .article-layout'),
+);
 
 if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   document.documentElement.classList.add('js-reveal');
@@ -110,7 +113,8 @@ if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-mot
         observer.unobserve(entry.target);
       });
     },
-    { threshold: 0.12, rootMargin: '0px 0px -40px' },
+    // Anticipar la entrada sin depender de un porcentaje del alto del bloque.
+    { threshold: 0, rootMargin: '0px 0px 80px' },
   );
 
   revealItems.forEach((item) => revealObserver.observe(item));
