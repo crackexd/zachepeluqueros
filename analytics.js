@@ -159,6 +159,15 @@
   settingsButton.textContent = 'Configurar cookies';
   settingsButton.hidden = true;
 
+  // Mantener el control junto a la información legal y liberar la esquina inferior.
+  const footer = document.querySelector('.site-footer');
+  const cookiesLink = footer?.querySelector('a[href$="cookies.html"]');
+  const settingsContainer = cookiesLink?.parentElement || footer?.querySelector('.footer-bottom p:last-child') || footer;
+  if (settingsContainer) {
+    if (!cookiesLink && settingsContainer.childNodes.length) settingsContainer.append(' · ');
+    settingsContainer.append(settingsButton);
+  }
+
   const showBanner = () => {
     banner.hidden = false;
     settingsButton.hidden = true;
@@ -194,7 +203,7 @@
   });
 
   settingsButton.addEventListener('click', showBanner);
-  document.body.append(banner, settingsButton);
+  document.body.append(banner);
 
   window.addEventListener('storage', (event) => {
     if (event.key !== storageKey && event.key !== null) return;

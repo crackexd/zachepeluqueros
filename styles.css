@@ -2148,8 +2148,7 @@ svg {
   gap: 0.65rem;
 }
 
-.cookie-consent__actions button,
-.cookie-settings-button {
+.cookie-consent__actions button {
   min-height: 2.75rem;
   padding: 0.7rem 1rem;
   border: 1px solid #302820;
@@ -2161,22 +2160,29 @@ svg {
   cursor: pointer;
 }
 
-.cookie-consent__actions button:focus-visible,
-.cookie-settings-button:focus-visible {
+.cookie-consent__actions button:focus-visible {
   outline: 3px solid #b78b63;
   outline-offset: 3px;
 }
 
 .cookie-settings-button {
-  position: fixed;
-  z-index: 999;
-  right: 1rem;
-  bottom: 1rem;
-  min-height: 2.4rem;
-  padding: 0.55rem 0.85rem;
-  border-color: rgba(250, 248, 242, 0.8);
-  font-size: 0.82rem;
-  box-shadow: 0 0.5rem 1.5rem rgba(48, 40, 32, 0.2);
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  color: inherit;
+  background: transparent;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.footer-column .cookie-settings-button:hover {
+  color: var(--copper-light);
+}
+
+.cookie-settings-button:focus-visible {
+  outline: 2px solid var(--copper-light);
+  outline-offset: 4px;
 }
 
 .js-reveal [data-reveal] {
@@ -2398,10 +2404,6 @@ svg {
   .contact-dock a span {
     font-size: 12px;
     font-weight: 400;
-  }
-
-  .has-contact-dock .cookie-settings-button {
-    bottom: calc(82px + env(safe-area-inset-bottom));
   }
 
   .has-contact-dock .cookie-consent {
