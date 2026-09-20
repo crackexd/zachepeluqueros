@@ -40,7 +40,7 @@ Para una sección de opiniones o un botón directo de reseña hace falta el enla
 
 1. Revisar Google Business Profile y guardar su línea base de llamadas, rutas, clics, consultas y reseñas. Generar el enlace/QR oficial y mantener horarios especiales.
 2. Actualizar Instagram, Facebook y Fresha usando la ficha maestra. El catálogo y las formas de reserva deben coincidir con los servicios reales.
-3. Reclamar Apple Maps y Bing Places. Configurar WhatsApp Business solo si se va a atender.
+3. Reclamar Apple Maps y Bing Places. WhatsApp Business ya está enlazado desde la web; mantener su horario de atención y respuestas rápidas.
 4. Acceder a Search Console para enviar el sitemap y solicitar revisión de las páginas nuevas tras publicarlas. No hay acceso conectado a estas cuentas en esta sesión.
 5. Obtener nuevas fotos de interior/equipo y permisos de imagen. Mantener la rutina de reseñas y contenido que propone el plan.
 

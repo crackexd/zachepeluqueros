@@ -100,6 +100,7 @@
   };
 
   const getCtaLocation = (element) => {
+    if (element.closest('.whatsapp-contact')) return 'whatsapp_flotante';
     if (element.closest('.contact-dock')) return 'barra_movil';
     if (element.closest('header')) return 'cabecera';
     if (element.closest('footer')) return 'pie';
@@ -120,6 +121,7 @@
     if (link) {
       const href = link.getAttribute('href') || '';
       if (href.startsWith('tel:')) sendEvent('click_llamar', link);
+      else if (link.matches('.whatsapp-contact')) sendEvent('click_whatsapp', link);
       else if (/google\.[^/]+\/maps/i.test(link.href)) sendEvent('click_como_llegar', link);
       else if (/instagram\.com/i.test(link.href)) sendEvent('click_instagram', link);
       else if (/facebook\.com/i.test(link.href)) sendEvent('click_facebook', link);

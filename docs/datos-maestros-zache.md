@@ -14,7 +14,7 @@ Revisión: 12 de septiembre de 2026. Fuente: web existente, perfil interno de Ma
 | Experiencia | Más de 30 años de oficio | Documentada; no se infiere fecha de inicio |
 | Antigüedad de Zache | 25 años en el barrio | Redacción confirmada por el propietario el 13 de septiembre de 2026; no se infiere una fecha de apertura |
 | Horario publicado | L-V 10:00-19:00 · S 10:00-14:00 · D cerrado | Confirmar vigencia y posibles pausas; festivos por teléfono |
-| Reserva operativa | Por teléfono | No se añaden reservas online ni WhatsApp sin confirmación |
+| Reserva operativa | Por teléfono o WhatsApp | WhatsApp Business confirmado el 20/09/2026; la cita requiere confirmación del salón |
 | Instagram | https://www.instagram.com/zache_peluqueros/ | Cuenta enlazada en la web existente |
 | Facebook | https://www.facebook.com/ZachePeluqueros/ | Cuenta enlazada en la web existente |
 
@@ -39,7 +39,7 @@ No hay tarifas, duraciones fijas ni condiciones de prueba confirmadas. Las pági
 - Métodos de pago y accesibilidad real del local.
 - Disponibilidad estable de manicura y maquillaje.
 - Condiciones de pruebas, cancelaciones y atención sin cita.
-- Número de WhatsApp, responsable y horario de respuesta, si se activa.
+- Responsable y horario habitual de respuesta en WhatsApp.
 - Enlace oficial de reseñas generado desde el Perfil de Empresa.
 - Correo público preferido y permisos de nuevas fotografías.
 
