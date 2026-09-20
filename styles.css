@@ -2348,7 +2348,7 @@ svg {
 .whatsapp-contact {
   position: fixed;
   z-index: 55;
-  left: 20px;
+  right: 20px;
   bottom: 20px;
   display: inline-flex;
   min-height: 56px;
@@ -3427,7 +3427,7 @@ svg {
 
   .catalog-page .whatsapp-contact {
     width: 56px;
-    left: 14px;
+    right: 14px;
     bottom: 14px;
     justify-content: center;
     padding: 8px;
