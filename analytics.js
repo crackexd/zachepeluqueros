@@ -121,7 +121,7 @@
     if (link) {
       const href = link.getAttribute('href') || '';
       if (href.startsWith('tel:')) sendEvent('click_llamar', link);
-      else if (link.matches('.whatsapp-contact')) sendEvent('click_whatsapp', link);
+      else if (link.matches('.whatsapp-contact, .catalog-whatsapp-link')) sendEvent('click_whatsapp', link);
       else if (/google\.[^/]+\/maps/i.test(link.href)) sendEvent('click_como_llegar', link);
       else if (/instagram\.com/i.test(link.href)) sendEvent('click_instagram', link);
       else if (/facebook\.com/i.test(link.href)) sendEvent('click_facebook', link);

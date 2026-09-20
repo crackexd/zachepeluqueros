@@ -134,3 +134,17 @@ if (window.location.hash === '#preguntas-belleza') {
   const answer = document.getElementById('preguntas-belleza');
   if (answer) answer.open = true;
 }
+
+// Recolocar los enlaces directos del catálogo cuando imágenes y estilos ya tienen su tamaño final.
+if (document.body.classList.contains('catalog-page')) {
+  const scrollToCatalogTarget = () => {
+    const target = document.getElementById(decodeURIComponent(window.location.hash.slice(1)));
+    if (target) target.scrollIntoView({ block: 'start' });
+  };
+  window.addEventListener(
+    'load',
+    scrollToCatalogTarget,
+    { once: true },
+  );
+  window.addEventListener('hashchange', scrollToCatalogTarget);
+}
